@@ -1,0 +1,57 @@
+$bg-color: #ffc0cb; // Pink background
+$container-bg: #ffffff;
+$text-color: #333333;
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+body {
+    background-color: $bg-color;
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: $text-color;
+}
+
+.container {
+    background-color: $container-bg;
+    width: 80%;
+    max-width: 800px;
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    .header-image {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        line-height: 1.6;
+        
+        h1 {
+            color: darken($text-color, 10%);
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        .content-image {
+             width: 100%;
+             height: auto;
+             margin: 20px 0;
+             border-radius: 4px;
+        }
+    }
+}
